@@ -1,0 +1,316 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  width: 24px;
+  height: 24px;
+}
+
+.navbar .heading {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 8px;
+}
+.bi-chevron-double-right::before {
+  content: "\f280";
+  cursor: pointer;
+}
+.navbar .search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 417px;
+  height: 44px;
+  border-radius: 6px;
+}
+
+.navbar .search-bar input {
+  flex-grow: 1;
+  height: 100%;
+  padding: 0 10px 0 40px;
+}
+
+.navbar .search-bar .search-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.navbar .nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-icons i {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  color:#787486;
+  cursor: pointer;
+}
+
+.navbar .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .user-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.navbar .username {
+  font-weight: bold;
+}
+
+.navbar .state {
+  text-align: right;
+  color:#787486;
+}
+
+.navbar .user-photo-container {
+  margin-left: 10px;
+}
+
+.navbar .user-photo {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.bi-chevron-down::before {
+  content: "\f282";
+  cursor: pointer;
+}
+
+/* Sidebar Styles */
+
+.navbar .sidebar {
+  width: 250px;
+  padding: 20px;
+  position: absolute;
+  top: 50px;
+  left: -250px;
+  height: 100%;
+  transition: left 0.3s ease;
+}
+
+.navbar .sidebar.open {
+  left: 0;
+  
+}
+
+.navbar .sidebar-heading {
+  font-size: 14px;
+  margin: 0 80px 0 4px;
+  text-transform: uppercase;
+  cursor: none;
+}
+
+.navbar .sidebar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color:#787486;
+  cursor: pointer;
+}
+
+.navbar .sidebar-item i {
+  margin-right: 10px;
+  color:#787486;
+  cursor: pointer;
+}
+
+.navbar .sidebar-line {
+  width: 224px;
+  border: 1px solid #DBDBDB;
+  margin: 20px 0 10px 0;
+}
+
+.navbar .sidebar .bi {
+  font-size: 1.2rem;
+}
+
+/* Media query for responsive sidebar */
+
+@media (max-width: 991px) {
+  .navbar .sidebar {
+    position: relative;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+/*---------------My Project------*/
+.myProject{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.sidebar-heading {
+  text-transform: uppercase;
+}
+.add-project {
+  display: flex;
+  align-items: center;
+}
+
+.add-project-content {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-project input {
+  flex-grow: 1;
+  height: 30px;
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.sidebar-item2 i {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  color: #555;
+  cursor: pointer;
+}
+
+#threedots{
+  margin-right: 40px;
+}
+
+.Projectname{
+  position: absolute;
+  left: 22px;;
+  cursor: pointer;
+}
+.Projectname:hover{
+  font-weight: bold;
+}
+.project-details{
+position: absolute;
+top: 40px;
+left: 300px;
+}
+.Card1{
+  display: flex;
+  width: 800px;
+  align-items: center;
+
+}
+
+.SetectedCard{
+  display: flex;
+  align-items: center;
+}
+#invite{
+  width: 200px;
+  color: blue;
+}
+#invite i{
+  margin: 5px;
+}
+.project-option1{
+  position: absolute;
+  left: -10px;
+  top: 70px;
+}
+.project-option1 i{
+  border: 1px solid rgb(205, 200, 200);
+  border-radius: 4px;
+  padding: 3px 6px;
+  color: gray;
+}
+#down{
+  border: none;
+}
+.project-option2{
+  position: absolute;
+  right: 20px;
+  top: 70px;
+}
+#Shear{
+  border: 1px solid rgb(205, 200, 200);
+  border-radius: 4px;
+  padding: 3px 6px;
+  margin-right: 5PX;
+}
+.sidebar-line2{
+  width: 270px;
+  height: 0px;
+  margin-top: 5px;
+    border: 2px solid #2b07f6;
+    border-radius: 2px;
+    /* margin: 20px 0 10px 0; */
+}
+.project-column{  
+  display: flex;
+  gap: 200px;   
+}
+.Todo{
+  position: absolute;
+  /* height: 625px; */
+  width: 300px;
+  top: 150px;  
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid #b6aaaa;
+}
+.project-column1{  
+  display: flex;
+  gap: 155px;   
+}
+.sidebar-line3{
+  width: 270px;
+  height: 0px;
+  margin-top: 5px;
+    border: 2px solid orange;
+    border-radius: 2px;
+}
+.Progress {
+  position: absolute;
+  /* height: 625px; */
+  width: 300px;
+  top: 150px;
+  left: 310px;
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid #b6aaaa;
+}
+
+.Done{
+  position: absolute;
+  /* height: 625px; */
+  width: 300px;
+  top: 150px;
+  left: 620px;
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px solid #b6aaaa;
+}
+.sidebar-line4{
+  width: 270px;
+  height: 0px;
+  margin-top: 5px;
+    border: 2px solid gray;
+    border-radius: 2px;
+}
